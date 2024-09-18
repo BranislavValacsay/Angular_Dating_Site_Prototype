@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm op8" [ngClass]="{'bgBlack':darkNavToggle === true}" > <!--p3 is padding-->
+  <a class="navbar-brand" routerLink='/'>
+    <img src="assets/big.png" width="50" height="50" alt="">
+    </a>
+
+  <!--LOGGED IN-->
+        <ul class="navbar-nav mr-auto ml-auto">
+          <ng-container *ngIf="currentUser$ | async" >
+            <li class="nav-item mr-5"><a class="nav-link" routerLinkActive='active' routerLink='/members'>Members</a></li>
+            <li class="nav-item mr-5"><a class="nav-link" routerLinkActive='active' routerLink='/lists'>Lists</a></li>
+            <li class="nav-item mr-5"><a class="nav-link" routerLinkActive='active' routerLink='/messages'>Messages</a></li>
+            <li class="nav-item mr-5"><a class="nav-link" routerLinkActive='active' routerLink='/test'>Test</a></li>
+            <li *appHasRole="['Admin','Moderator']" class="nav-item mr-5"><a class="nav-link" routerLinkActive='active' routerLink='/admin'>Admin</a></li>
+           </ng-container>
+           <li class="nav-item mr-5"><a class="nav-link" routerLinkActive='errors' routerLink='/errors'>ERRORS</a></li>
+        </ul>
+
+        <ng-container *ngIf="(currentUser$ | async) as user" >
+          <img src="{{user.photoUrl || './assets/user.png'}}" alt="{{user.userName}}">
+        <div class="dropdown mr-5" dropdown>
+          <a *ngIf="user.userName" class="dropdown-toggle text-dark mr-2 ml-2" dropdownToggle> {{user.knownAs || user.userName | titlecase}}</a>
+            <div class="dropdown-menu mt-3" *dropdownMenu>
+              <a class="dropdown-item nav-link" routerLinkActive='active' routerLink='/member/edit'>Edit profile</a>
+              <a class="dropdown-item" (click)="logout()" >Logout</a>
+            </div>
+        </div>
+        </ng-container>
+
+    <!--NOT LOGGED IN-->
+    <div *ngIf="(currentUser$ | async) === undefined || (currentUser$ | async) === null">
+
+              <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+                <input
+                name="username"
+                [(ngModel)]="model.userName"
+                class="form-control ml-5" 
+                type="text" 
+                placeholder="User name">
+                
+                <input 
+                name="password"
+                [(ngModel)]="model.password"
+                class="form-control ml-5" 
+                type="password" 
+                placeholder="Password">
+
+              <button class="btn btn-success ml-5" type="submit">Login</button>
+              <a class="nav-link" routerLinkActive='active' routerLink='/register'>Register</a>
+            </form>
+    </div>
+</nav>

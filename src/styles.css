@@ -1,0 +1,158 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+  /*
+
+
+
+
+.container {
+  /*  background-color: white;*/
+
+
+.tab-panel {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.navbar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+
+.nav-tabs > li.open, .member-tabset > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+
+.member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+
+.member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+
+.member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+
+.member-tabset > .nav-tabs > li.active {
+  border-bottom: 4px solid #E95420;
+  position: relative;
+}
+
+.member-tabset > .nav-tabs > li.active > a {
+  border: 0 !important;
+  color: #333333;
+}
+
+.member-tabset > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+
+.member-tabset > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.op8{
+  background:
+      linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+      )
+}
+
+.lightred1 { 
+  background-color:rgb(139, 55, 55);
+  box-shadow:0px 0px 00rem 20rem rgb(139, 55, 55);
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  border-radius: 50%; 
+  z-index: -1;
+}
+
+.lightblue1 { 
+  background-color:rgb(3, 99, 150);
+  box-shadow:0px 0px 00rem 15rem rgb(3, 99, 150);
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:10%;
+  right: 0%;
+  border-radius: 50%; 
+  z-index: -1;
+}
+
+.orange1 { 
+  background-color:orange;
+  box-shadow:0px 0px 00rem 15rem orange;
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:20%;
+  right: 30%;
+  border-radius: 50%; 
+  z-index: -1;
+}
+
+.darkblue1 { 
+  background-color:rgb(6, 11, 31);
+  box-shadow:0px 0px 0rem 10rem rgba(6, 11, 31, 1);
+  width:20rem;
+  height:20rem;
+  position: absolute;
+  bottom:-10rem;
+  right: -10rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.lightblue2 { 
+  background-color:rgb(86, 126, 211);
+  box-shadow:0px 0px 00rem 20rem rgba(86, 126, 211, 1);
+  width:1rem;
+  height:1rem;
+  position: absolute;
+  top:25rem;
+  left:20%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.darkyellow1 { 
+  background-color:rgb(72, 83, 20);
+  box-shadow:0px 0px 00rem 10rem rgb(72, 83, 20,1);
+  width:20rem;
+  height:20rem;
+  position: absolute;
+  bottom:-10rem;
+  left: -10rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  background-color: rgb(64, 0, 64);
+  }
+
+  /*
+    background:
+    linear-gradient(45deg,  rgba(137, 161, 0, 0.815), rgba(0,0,0,0) 50%),
+    linear-gradient(135deg, purple, rgba(255,0,0,0) 70%),
+    linear-gradient(225deg, rgba(3, 162, 173, 0.486), rgba(0,0,0,0) 20%),
+    linear-gradient(315deg, rgb(0, 0, 0), rgba(0,0,0,0) 90%);
+    height: 900px;
+  */
