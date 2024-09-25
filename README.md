@@ -1,4 +1,4 @@
-# Dating portal frontkend written in Angular 11.0.6 (upgrade possible)
+# Dating portal frontkend written in Angular 11.0.6 (upgrade possible, I have written it some time ago)
 
 ## About This Project
 
