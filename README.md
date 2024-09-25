@@ -1,29 +1,112 @@
-# Trydem
+# Dating portal frontkend written in Angular 11.0.6 (upgrade possible)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
+## About This Project
 
-## Development server
+This repository contains the example codebase of Angular Frontend for dating site.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Built With
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io/) - The web framework used
+- [TypeScript](https://www.typescriptlang.org/) - Programming language
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - For advanced styling
+- [ngx-bootstrap](https://www.npmjs.com/package/ngx-toastr) - so pages are scalable, mobile view
 
-## Build
+## Features
+- authentication and authorization
+- user filtering on various criteria
+- user detailed profile, including gender, location, photos, bio...
+- instant messaging
+- emails
+- possible to "like" user
+- functional gallery administration
+- presnce tracking (colors - green, yellow, red)
+- pagination
+- profile manament
+- profile photo management
+- photo gallery
+- user BIO
+- user search by criteria (gender, age , city, state..)
+- DTOs, Interceptors, Services, Lazy loading to offload Database
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Authentication System
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Secure login (JWT)
+- Password recovery mechanism
+- Registration form
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Internal Management
 
-## Further help
+- User and profile management
+- User data management
+- Presence tracking
+- Internal communication tools
+- SignalR for instal messaging
+- Error handling (404 and 401)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# Trydem" 
-"# Trydem" 
+
+### Admin Dashboard Backend
+
+- user rights adminstration (admin, user)
+
+
+### User Management
+
+- CRUD operations for user accounts
+- Role and permission management system
+
+
+## Technical Specifications
+### Authorization & Authentication
+
+- Implement JWT (JSON Web Tokens) for secure authentication
+- Role-based access control
+- Router AuthGuard based on roles
+
+### Search Functionality
+
+- Implement search for advanced querying
+- Pagination
+- Design and implement multi-criteria filtering logic
+
+Security Measures
+
+- Implement HTTPS for all communications
+- Cross-Origin Resource Sharing (CORS) configuration
+- Input sanitization to prevent SQL injection and XSS attacks
+
+Deployment and DevOps
+
+- Possible containerization using Docker for consistent environments
+- CI/CD pipeline setup for automated testing and deployment
+- Environment-specific configuration management
+
+### Installation
+1. Clone the repository
+   ```
+   git clone https://github.com/BranislavValacsay/Angular_Dating_Site_Prototype.git
+   ```
+2. Navigate to the project directory
+   ```
+   cd Angular_Dating_Site_Prototype\src\app
+   ```
+3. [Any additional setup steps]
+
+### Running the Application
+- [Instructions on how to run the application locally]
+```
+  ng serve
+```
+
+
+## Contact
+
+- LinkedIn: [https://www.linkedin.com/in/branislav-valacsay/](https://www.linkedin.com/in/branislav-valacsay/)
+- Email: branislav.valacsay@archdev.tech
+- Website: http://archdev.tech
+
+---
+
+"Blending creativity with technology to create something useful and engaging."
